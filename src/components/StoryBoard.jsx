@@ -6,6 +6,7 @@ export default function StoryBoard({ prompts }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        // eslint-disable-next-line
         const imagesArray = await Promise.all(
           prompts.map(async (prompt) => {
             try {
@@ -51,7 +52,8 @@ export default function StoryBoard({ prompts }) {
       <ul className='image-gallery'>
         {images.map((image, index) => (
           <div key={index}>
-            <img key={index}src={image} alt=""} />
+            
+            <img key={index}src={image} alt=""/>
           </div>
         ))}
       </ul>
