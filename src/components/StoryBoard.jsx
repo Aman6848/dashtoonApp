@@ -51,7 +51,7 @@ export default function StoryBoard({ prompts }) {
       <ul className='image-gallery'>
         {images.map((image, index) => (
           <div key={index}>
-            <img key={index}src={image} alt={`Fetched Image ${index}`} />
+            <img key={index}src={image} alt=""} />
           </div>
         ))}
       </ul>
