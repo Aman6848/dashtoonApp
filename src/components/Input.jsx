@@ -1,5 +1,6 @@
 import React from "react";
 export default function Input({ objValue, onChange, index, deleteField, addField }) {
+  // eslint-disable-next-line
   const { label, type, value } = objValue;
   return (
     <div className="scene">
