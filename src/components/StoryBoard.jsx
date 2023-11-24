@@ -47,7 +47,7 @@ export default function StoryBoard({ prompts }) {
 
   return (
     <div className='images'>
-      <h2>Story Board</h2>
+      <h2 style={{fontSize:"50px"}}>Story Board</h2>
       <ul className='image-gallery'>
         {images.map((image, index) => (
           <div key={index}>
